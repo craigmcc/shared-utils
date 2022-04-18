@@ -12,7 +12,8 @@
     "publish": "npm publish --access public .",
     "test": "jest",
     "testall": "CI=true jest",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "typedoc": "typedoc --cleanOutputDir --out apidocs src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -30,7 +31,8 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "jest": "^27.5.1",
-    "ts-jest": "^27.1.4"
+    "ts-jest": "^27.1.4",
+    "typedoc": "^0.22.15"
   },
   "dependencies": {
     "typescript": "^4.6.3"
