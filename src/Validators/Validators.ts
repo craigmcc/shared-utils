@@ -57,6 +57,20 @@ const Validators = {
     },
 
     /**
+     * Validate a number string.
+     *
+     * @param {string | null | undefined} number   Number string to be validated
+     * @return {boolean}                    True if the number string is valid or empty
+     */
+    number (number: string | null | undefined): boolean {
+        if (number) {
+            return !isNaN(Number(number));
+        } else {
+            return true;
+        }
+    },
+
+    /**
      * Validate a US phone number (999-999-9999).
      *
      * @param {string} phone                Phone number to be validated
