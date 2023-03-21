@@ -10,7 +10,7 @@ This library depends on the following peer dependencies, but is flexible about
 which version is used.  Check the `peerDependencies` section of the
 `package.json` file to see what minimum versions are required.
 
-If needed, you can install the peer dependencies:
+If not already installed, you can install the peer dependencies:
 ```shell
 npm install date-fns
 ```
