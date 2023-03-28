@@ -1,15 +1,13 @@
-/**
- * @module @craigmcc/shared-utils/Validators
- *
- * @description
- * Standard (across applications) validation methods that can be used both by
- * backend database interactions and frontend UI comonents.  In all cases, a
- * "true" return value indicates that the proposed value is valid, while "false"
- * means that it is not.  If a field is required, that must be validated separately.
- */
+// Validators ----------------------------------------------------------------
 
 // Public Objects ------------------------------------------------------------
 
+/**
+ * Standard (across applications) validation methods that can be used both by
+ * backend database interactions and frontend UI components.  In all cases, a
+ * "true" return value indicates that the proposed value is valid, while "false"
+ * means that it is not.  If a field is required, that must be validated separately.
+ */
 const Validators = {
 
     /**

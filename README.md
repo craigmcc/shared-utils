@@ -2,9 +2,25 @@
 
 This module contains a number of functions that I have shared across multiple
 applications the old fashioned way (cut-n-paste).  It's time to make them a
-separate thing so they can be maintained and updated in one single place.
+separate thing, so they can be maintained and updated in one single place.
 
-## Installation
+## Included Modules
+
+The following modules are provided by this library:
+
+| Module Name | Description                                                                                                                                                                                                                                                  |
+| ----------- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Dates       | Convenience methods to deal with dates represented as strings (YYYY-MM-DD) that are most useful for UI forms, and for transport between client and server in JSON representations.                                                                           |
+| Months      | Convenience methods to deal with months represented as strings (YYYY-MM) that are most useful in UI forms.                                                                                                                                                   |
+| Timestamps  | Convenience methods to construct date/time representations as strings (either ISO or local).                                                                                                                                                                 |
+| Validators  | Simple validation functions for many data types.  In all cases, an empty string value will be evaluated as *true*, because this commonly occurs in UI forms for new data objects.  If you need to check for required values, that should be done separately. |
+
+Detailed API documentation for these modules is
+available at [API Documentation](https://craigmcc.github.io/shared-utils/)
+
+## Using the Utility Methods
+
+### Install the Peer Dependencies
 
 This library depends on the following peer dependencies, but is flexible about
 which version is used.  Check the `peerDependencies` section of the
@@ -15,24 +31,33 @@ If not already installed, you can install the peer dependencies:
 npm install date-fns
 ```
 
-To install this library itself:
+### Install the Package
+
+Install this package by adding it to your `package.json` file, with npm:
+
 ```shell
 npm install @craigmcc/shared-utils
 ```
 
-## Included Modules
+or with yarn:
 
-The following modules are provided by this library:
+```shell
+yarn install @craigmc/shared-utils
+```
 
-| Module Name | Description |
-| ----------- | ----------- |
-| Dates       | Convenience methods to deal with dates represented as strings (YYYY-MM-DD) that are most useful for UI forms, and for transport between client and server in JSON representations. |
-| Months      | Convenience methods to deal with months represented as strings (YYYY-MM) that are most useful in UI forms. |
-| Validators  | Simple validation functions for many data types.  In all cases, an empty string value will be evaluated as *true*, because this commonly occurs in UI forms for new data objects.  If you need to check for required values, that should be done separately. |
+### Use utility methods in your functions
 
-[//]: # (Detailed API documentation for these modules is)
+At the top of each source file, import the module(s) you will need:
 
-[//]: # (available at [API Documentation]&#40;https://github.com/craigmcc/shared-utils/docs&#41;)
+```ts
+import {Dates, Months} from "@craigmcc/shared-utils";
+```
+
+Then, call the requested method, prefixing it with the module name:
+
+```ts
+console.log(`It is currently ${Dates.today()}.`)
+```
 
 ## Building the Library From Sources
 

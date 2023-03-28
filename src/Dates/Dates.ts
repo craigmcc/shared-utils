@@ -1,11 +1,4 @@
-/**
- * @module @craigmcc/shared-utils/Dates
- *
- * @description
- * Convenience functions that perform useful calculations with dates that are
- * represented as strings (YYYY-MM-DD).  Only the toObject() and fromObject()
- * methods deal with actual JavaScript Date objects.
- */
+// Dates ---------------------------------------------------------------------
 
 // External Modules ----------------------------------------------------------
 
@@ -15,6 +8,11 @@ import subDays from "date-fns/subDays";
 
 // Public Objects ------------------------------------------------------------
 
+/**
+ * Convenience functions that perform useful calculations with dates that are
+ * represented as strings (YYYY-MM-DD).  Only the toObject() and fromObject()
+ * methods deal with actual JavaScript Date objects.
+ */
 const Dates = {
 
     /**

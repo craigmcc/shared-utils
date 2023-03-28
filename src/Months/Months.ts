@@ -1,10 +1,4 @@
-/**
- * @module craigmcc/shared-utils/Months
- *
- * @description
- * Convenience functions that perform useful calculations with months that are
- * represented as strings (YYYY-MM).
- */
+// Months --------------------------------------------------------------------
 
 // External Modules ----------------------------------------------------------
 
@@ -18,6 +12,11 @@ import subMonths from "date-fns/subMonths";
 import Dates from "../Dates/Dates";
 
 // Public Objects ------------------------------------------------------------
+
+/**
+ * Convenience functions that perform useful calculations with months that are
+ * represented as strings (YYYY-MM).
+ */
 
 const Months = {
 

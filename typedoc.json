@@ -1,4 +1,5 @@
 {
   "plugin": ["typedoc-theme-yaf"],
+  "readme": "./README.md",
   "theme": "yaf"
 }

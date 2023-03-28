@@ -1,15 +1,13 @@
+// Timestamps ----------------------------------------------------------------
+
+// Public Objects ------------------------------------------------------------
+
 /**
- * @module @craigmcc/shared-utils/Timestamps
- *
- * @description
  * Convenience functions to construct date/time representations as strings
  * from Javascript Date objects, in either local time (YYYYMMDD-HHMMSS) format,
  * adjusted for the local time zone, or in ISO format (yyyy-mm-ddThh:mm:ss+nn)
  * with a timezone offset (+/-) in hours.
  */
-
-// Public Objects ------------------------------------------------------------
-
 const Timestamps = {
 
     /**
