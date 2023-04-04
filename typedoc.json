@@ -1,5 +1,5 @@
 {
-  "plugin": ["typedoc-theme-yaf"],
+  "plugin": ["typedoc-theme-hierarchy"],
   "readme": "./README.md",
-  "theme": "yaf"
+  "theme": "hierarchy"
 }
