@@ -1,4 +1,5 @@
 {
+  "entryPointStrategy": "expand",
   "plugin": ["typedoc-theme-hierarchy"],
   "readme": "./README.md",
   "theme": "hierarchy"
